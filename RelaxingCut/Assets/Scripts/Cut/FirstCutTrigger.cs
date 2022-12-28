@@ -1,11 +1,16 @@
+using System;
 using UnityEngine;
 using EzySlice;
 using DG.Tweening;
+using Money;
 
 namespace Cut
 {
     public class FirstCutTrigger : CutBase
     {
+       [SerializeField] public NewMoney newMoney;
+
+
         private void OnTriggerEnter(Collider other)
         {
 
@@ -13,6 +18,7 @@ namespace Cut
             {
                 cutGameObject = other.gameObject;
                 AfterCutting();
+                newMoney.NewMoneyInstance(cutGameObject.transform,cutGameObject.transform.position);
             }
         }
         public void AfterCutting()
@@ -30,7 +36,7 @@ namespace Cut
             
         }
         
-        private void AfterCuttingAddComponentUp(GameObject cutOffUp , Vector3 endPosition )
+        private void AfterCuttingAddComponentUp(GameObject cutOffUp , Vector3 endPosition)
         {
             cutOffUp.AddComponent<BoxCollider>(); 
             cutOffUp.AddComponent<Rigidbody>();

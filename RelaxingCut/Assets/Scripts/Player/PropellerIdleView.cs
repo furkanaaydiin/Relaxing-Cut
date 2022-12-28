@@ -1,4 +1,6 @@
 using System;
+using Money;
+using TMPro;
 using UnityEngine;
 
 namespace Player
@@ -7,10 +9,13 @@ namespace Player
     {
         [SerializeField] private Joystick movementJoystick;
         [SerializeField] private InputController inputController;
+        
 
-        private void FixedUpdate()
+        private void Update()
         {
             inputController.SetInput(movementJoystick.Direction);
+            
+            
         }
     }
 }
