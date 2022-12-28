@@ -6,7 +6,8 @@ namespace Player
     {
         public void SetInput(Vector2 movementJoystickDirection)
         {
-            PropellerController.Instance.Move(movementJoystickDirection);
+            PropellerController.Instance.PropellerMove(movementJoystickDirection);
+            PropellerController.Instance.PropellerDirectionSpeed();
         }
     }
 }

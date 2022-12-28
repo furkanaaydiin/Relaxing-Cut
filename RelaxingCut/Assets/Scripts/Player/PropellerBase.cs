@@ -5,13 +5,23 @@ namespace Player
     public class PropellerBase : MonoBehaviour
     {
         
-        public float Speed;
+        public float PropellerSpeed;
+        public float DirectionSpeed;
+        public GameObject GamePropeller;
         
-        public virtual void Move(Vector2 movementJoystickDirection)
+        public virtual void PropellerMove(Vector2 movementJoystickDirection)
         {
-            Debug.Log("base move " + gameObject.name);
-          
+           // Debug.Log("base move " + gameObject.name);
         }
+
+        public virtual void PropellerDirectionSpeed()
+        {
+            // GamePropeller.transform.rotation =  Quaternion.Euler(0,DirectionSpeed,0);
+        }
+        
+        
+        
+        
         
     }
 }
