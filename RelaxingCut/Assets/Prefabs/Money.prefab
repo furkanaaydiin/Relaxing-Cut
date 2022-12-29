@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 6940610540301435000}
   - component: {fileID: 7512398443472091132}
   - component: {fileID: 756505970431970075}
-  - component: {fileID: 7958509729735019445}
+  - component: {fileID: 892590787979358978}
   m_Layer: 0
-  m_Name: "mAN\u0130"
+  m_Name: Money
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7789538580336278219}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.0353888, y: 1.3439829, z: 2.6}
+  m_LocalPosition: {x: 5.017691, y: 0.323225, z: 6.8573246}
   m_LocalScale: {x: 0.28405, y: 0.28405, z: 0.28405}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -115,7 +115,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &7958509729735019445
+--- !u!114 &892590787979358978
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -124,9 +124,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 7789538580336278219}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b02bbaae68b48e2ae87c83765284903, type: 3}
+  m_Script: {fileID: 11500000, guid: 6d080a1871156104ea870d567741d3fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moneyPrefab: {fileID: 7789538580336278219}
-  moneyText: {fileID: 0}
-  collectedMoney: 0

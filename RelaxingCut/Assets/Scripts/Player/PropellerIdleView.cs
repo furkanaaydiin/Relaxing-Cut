@@ -9,13 +9,10 @@ namespace Player
     {
         [SerializeField] private Joystick movementJoystick;
         [SerializeField] private InputController inputController;
-        
 
         private void Update()
         {
             inputController.SetInput(movementJoystick.Direction);
-            
-            
         }
     }
 }

@@ -8,7 +8,7 @@ namespace Cut
 {
     public class FirstCutTrigger : CutBase
     {
-       [SerializeField] public NewMoney newMoney;
+       [SerializeField] private CurrencyBase currencyPrefab;
 
 
         private void OnTriggerEnter(Collider other)
@@ -18,7 +18,7 @@ namespace Cut
             {
                 cutGameObject = other.gameObject;
                 AfterCutting();
-                newMoney.NewMoneyInstance(cutGameObject.transform,cutGameObject.transform.position);
+                Instantiate(currencyPrefab, null).Initialize(cutGameObject.transform.position);
             }
         }
         public void AfterCutting()
@@ -48,7 +48,7 @@ namespace Cut
         {
             cutOffDown.AddComponent<BoxCollider>(); 
             cutOffDown.AddComponent<Rigidbody>();
-            Destroy(cutOffDown,2f);
+            Destroy(cutOffDown,4f);
         }
 
 
