@@ -111,6 +111,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 9cef68d5972365d4a87a8b821eab9426, type: 2}
+  currencyPrefab: {fileID: 892590787979358978, guid: 24b0e9fd43eba9e49b498ce4f225078a, type: 3}
 --- !u!1 &4891222399776657348
 GameObject:
   m_ObjectHideFlags: 0
@@ -125,7 +126,7 @@ GameObject:
   - component: {fileID: 1004063252415608201}
   m_Layer: 0
   m_Name: Propeller
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -205,8 +206,8 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4891222399776657348}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.003910852, y: 0.0017784752, z: 0.0016002933}
-  m_Center: {x: 0.0011372465, y: -0.000041362928, z: -0.00006483338}
+  m_Size: {x: 0.0024692616, y: 0.0017784752, z: 0.0016002933}
+  m_Center: {x: -0.00040803957, y: -0.000041362928, z: -0.00006483338}
